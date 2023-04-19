@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <section class="game">
+        <!--Titel -->
+        <div class="title">Rock Paper Scissor</div>
+         
+          <!--Socre weergeven -->
+        <div class="score"> 
+            <div class="playerScore">
+                <h2>Player</h2>
+                <p class="p-count count">0</p>
+ 
+            </div>      
+            <div class="computerScore">
+                <h2>Computer</h2>
+                <p class="c-count count">0</p>
+ 
+            </div>
+        </div>
+       
+        <div class="move">Choose your move</div>
+         
+          <!--Hoeveel zetten je nog over hebt -->
+        <div class="movesleft">Moves Left: 10 </div>
+
+        <style>  
+              
+            img {  
+            max-width: 100px;  
+            height: 56px;  
+            }  
+
+            #steen {
+                max-width: 100px;
+                height: 56px;
+            }
+            </style> 
+
+        <img id="steen"
+        src="steen.png">
+        <img src="papier.png">
+        <img src="schaar.png">
+         
+          <!--Opties -->
+        <div class="options">
+            <button class="rock">Rock</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="paper">Paper</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="scissor">Scissors</button>   
+        </div>
+         
+          <!--Resultaat -->
+        <div class="result"></div>
+         
+          <!--Herladen -->
+        <button class="reload">Herladen</button>
+ 
+    </section>
+ 
+    <script src="app.js"></script>
+</body>
+</html>
